@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hospedajes</title>
+  <title>Restaurantes</title>
   <link href="VistaTour.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -65,106 +65,61 @@
 
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="VistaHome.html" class="nav-link active" aria-current="page">Home</a></li>
         <li class="nav-item"><a href="VistaTourP.html" class="nav-link">Tours</a></li>
-        <li class="nav-item"><a href="VistaTour.html" class="nav-link active">Hospedaje</a></li>
+        <li class="nav-item"><a href="VistaHospedaje.html" class="nav-link">Hospedaje</a></li>
         <li class="nav-item"><a href="VistaRestaurante.html" class="nav-link">Restaurantes</a></li>
         <li class="nav-item"><a href="VistaAtracciones.html" class="nav-link">Atracciones</a></li>
       </ul>
     </header>
   </header>
-
   <!--Carrusel-->
-  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="Img/pexels-min-an-774042.jpg" class="d-block w-100" alt="..." width="100%">
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="Img/pexels-pixabay-258154.jpg" class="d-block w-100" alt="..." width="100%">
+      <div class="carousel-item active">
+        <img src="Img/SliderTour2.jpg" class="d-block w-100" alt="..." width="100%">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <p class="opacity-75">Explora y  Conoce</p>
+            <h1>Nuestros Tours</h1>
+          </div>
+        </div>
       </div>
       <div class="carousel-item">
-        <img src="Img/pexels-thorsten-technoman-338504.jpg" class="d-block w-100" alt="..." width="100%">
+        <img src="Img/SliderTourmed.jpg" class="d-block w-100" alt="..." width="100%">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <p class="opacity-75">Explora y  Conoce</p>
+            <h1>Nuestros Tours</h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Img/slidertour1.jpg" class="d-block w-100" alt="..." width="100%">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <p class="opacity-75">Explora y  Conoce</p>
+            <h1>Nuestros Tours</h1>
+          </div>
+        </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <!--Anuncio-->
-  <img  style="margin-right: 2%; max-width: 100%; height: auto"  src="https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress&cs=tinysrgb&w=1600" class="rounded float-end" width="250" height="1250">
   <!---Contenido-->
-  <div class="card text-bg-light mb-3" style="max-width: 80%; margin-left: 2%;">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="https://z.cdrst.com/foto/hotel-sf/1630/medianaresp/alua-tenerife-exterior-112232f6.jpg" class="img-fluid rounded-start" width="450" height="750">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Hotel Alua Tenerife</h5>
-          <p class="card-text">El Alua Tenerife cuenta con una situación estupenda, muy cerca del pueblo de La Orotava, a unos metros de la playa y al lado de Loro Parque, el parque de animales más famoso de todo Tenerife. Además, tiene muchas comodidades, con piscinas, sauna, gimnasio, pistas de tenis o bares y restaurantes.</p>
-          <a href="#" class="btn btn-primary card text-center mb-3 btn btn-outline-success" style="margin-left: 40%; margin-right: 40%;">Info.</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!---Contenido-->
-  <div class="card text-bg-light mb-3" style="max-width: 80%; margin-left: 2%;">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="https://x.cdrst.com/foto/hotel-sf/7209/medianaresp/hotel-atlantic-el-tope-exterior-11553714.jpg" class="img-fluid rounded-start" width="450" height="750">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Hotel Atlantic El Tope</h5>
-          <p class="card-text">El Hotel Atlantic El Tope se encuentra en el Puerto de la Cruz, pequeño puerto del valle de la Orotava que está considerado como el principal punto turístico de las Islas Canarias. Está situado a tan solo 400 metros de la playa y ofrece unas vistas espectaculares al Teide, declarado Patrimonio de la Humanidad en el año 2007. Está muy bien comunicado ya que se sitúa a tan solo 28 km del aeropuerto de Tenerife Norte y a 90 km del aeropuerto de Tenerife Sur.</p>
-          <a href="#" class="btn btn-primary card text-center mb-3 btn btn-outline-success" style="margin-left: 40%; margin-right: 40%;">Info.</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!---Contenido-->
-  <div class="card text-bg-light mb-3" style="max-width: 80%; margin-left: 2%;">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="https://z.cdrst.com/foto/hotel-sf/6d9f/medianaresp/hotel-abades-nevada-palace-exterior-f3503d8.jpg" class="img-fluid rounded-start" width="450" height="750">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Hotel Abades Nevada Palace</h5>
-          <p class="card-text">A solo 10 minutos en coche del centro histórico de la ciudad de Granada, en Andalucía, se encuentra el Abades Nevada Palace, un hotel y spa que combina a la perfección relajación y confort para crear un ambiente estupendo para vivir una experiencia única. Las habitaciones que este hotel ofrece a sus huéspedes están decoradas con un estilo moderno, empleando colores claros combinados con tonalidades más oscuras que ponen el punto elegante de la estancia.</p>
-          <a href="#" class="btn btn-primary card text-center mb-3 btn btn-outline-success" style="margin-left: 40%; margin-right: 40%;">Info.</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!---Contenido-->
-  <div class="card text-bg-light mb-3" style="max-width: 80%; margin-left: 2%;">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="https://y.cdrst.com/foto/hotel-sf/1508c/medianaresp/citymax-hotel-al-barsha-at-the-mall-servicios-8734ede.jpg" class="img-fluid rounded-start" width="450" height="750">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Citymax Hotel Al Barsha at the Mall</h5>
-          <p class="card-text">El Citymax Al Barsha está en Dubai, cerca de algunos de los lugares más representativos de la ciudad, como el centro comercial Mall of Emirates, las playas o el Media and Internet City. Se trata de un complejo en el que se ofrecen numerosas prestaciones a los huéspedes, entre las que destaca la piscina climatizada en la terraza, junto a la cual hay un bar.</p>
-          <a href="#" class="btn btn-primary card text-center mb-3 btn btn-outline-success" style="margin-left: 40%; margin-right: 40%;">Info.</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+
 
   <!--Footer-->
   <div class="b-example-divider"></div>
@@ -174,7 +129,6 @@
         <div class="col-6 col-md-2 mb-3">
           <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
             <img class="bi me-2" width="100" height="100" src="Img/WhatsApp Image 2023-11-26 at 9.29.16 PM.jpeg">
-
           </a>
         </div>
 
