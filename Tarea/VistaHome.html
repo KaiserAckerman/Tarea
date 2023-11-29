@@ -17,12 +17,46 @@
 </head>
 
 <body>
+  <style>
+    .carousel {
+        position: relative; /* Asegura que el carrusel esté en una posición relativa */
+    }
+
+    header.head-p {
+        background-color: transparent; /* Fondo transparente para el header */
+        position: absolute; /* Posición absoluta para el header */
+        width: 100%;
+        z-index: 1000; /* Asegura que el header esté por encima del carrusel */
+    }
+
+  
+    .search-form {
+        width: 100%; /* Ancho del 100% */
+        max-width: 600px; /* O ajusta según tus necesidades */
+        margin: 0 auto; /* Centrado horizontalmente */
+        display: flex;
+        align-items: center;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+    
+</style>
+
+
+
+
+
+
+</div>
+
   <!--Header-->
   <div class="b-example-divider"></div>
 
   <header class="head-p">
     <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
           <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
             <use xlink:href="#bootstrap" />
@@ -31,14 +65,15 @@
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 text-secondary"><img class="bi me-2" width="80" height="80"
-                src="Img/WhatsApp Image 2023-11-26 at 3.55.03 PM.jpeg">
+                src="Img/Logo PNG.png">
             </a></li>
         </ul>
 
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control" placeholder="¿Qué estás buscando?" aria-label="Search">
-        </form>
+        <form class="search-form" role="search">
+          <input type="search" class="form-control search-input" placeholder="¿Qué estás buscando?"
+              aria-label="Search">
+      </form>
 
 
         <div class="text-end">
@@ -73,54 +108,257 @@
       </ul>
     </header>
   </header>
+  
   <!--Carrusel-->
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="Img/SliderTour2.jpg" class="d-block w-100" alt="..." width="100%">
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <p class="opacity-75">Explora y  Conoce</p>
-            <h1>Nuestros Tours</h1>
-          </div>
-        </div>
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="Img/pexels-min-an-774042.jpg" class="d-block w-100" alt="..." width="100%">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="Img/pexels-pixabay-258154.jpg" class="d-block w-100" alt="..." width="100%">
       </div>
       <div class="carousel-item">
-        <img src="Img/SliderTourmed.jpg" class="d-block w-100" alt="..." width="100%">
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <p class="opacity-75">Explora y  Conoce</p>
-            <h1>Nuestros Tours</h1>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="Img/slidertour1.jpg" class="d-block w-100" alt="..." width="100%">
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <p class="opacity-75">Explora y  Conoce</p>
-            <h1>Nuestros Tours</h1>
-          </div>
-        </div>
+        <img src="Img/pexels-thorsten-technoman-338504.jpg" class="d-block w-100" alt="..." width="100%">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <!---Contenido-->
+    
+    <!--Contenido-->
+    <div class="card text-bg-light mb-3" style="max-width: 90%; margin-left: 2%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="https://z.cdrst.com/foto/hotel-sf/1630/medianaresp/alua-tenerife-exterior-112232f6.jpg" class="img-fluid rounded-start" width="450" height="750">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Hotel Alua Tenerife</h5>
+            <p class="card-text">El Alua Tenerife cuenta con una situación estupenda, muy cerca del pueblo de La Orotava, a unos metros de la playa y al lado de Loro Parque, el parque de animales más famoso de todo Tenerife. Además, tiene muchas comodidades, con piscinas, sauna, gimnasio, pistas de tenis o bares y restaurantes.</p>
+            <a href="#" class="btn btn-primary card text-center mb-3 btn btn-outline-success" style="margin-left: 40%; margin-right: 40%;">Info.</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    
+    <main class="products container">
 
+      <div class="text-center py-3">
+        <div class="h1 text-dark">Actividades increíbles</div>
+    </div>
+
+            <div class="row">
+          <div class="col-md-6">
+              <div class="card text-bg-light mb-3" style="max-width: 100%;">
+                  <div class="row g-0">
+                      <div class="col-md-4">
+                          <img src="https://z.cdrst.com/foto/hotel-sf/1630/medianaresp/alua-tenerife-exterior-112232f6.jpg"
+                              class="img-fluid rounded-start h-100" width="450" height="750">
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">Hotel Alua Tenerife</h5>
+                              <p class="card-text">El Alua Tenerife cuenta con una situación estupenda, muy cerca del
+                                  pueblo de La Orotava, a unos metros de la playa y al lado de Loro Parque, el parque
+                                  de animales más famoso de todo Tenerife. Además, tiene muchas comodidades, con
+                                  piscinas, sauna, gimnasio, pistas de tenis o bares y restaurantes.</p>
+                              <a href="#"
+                                  class="btn btn-primary card text-center mb-3 btn btn-outline-success"
+                                  style="margin-left: 40%; margin-right: 40%;">Info.</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-6">
+              <div class="card text-bg-light mb-3" style="max-width: 100%;">
+                  <div class="row g-0">
+                      <div class="col-md-4">
+                          <img src="https://z.cdrst.com/foto/hotel-sf/1630/medianaresp/alua-tenerife-exterior-112232f6.jpg"
+                              class="img-fluid rounded-start h-100" width="450" height="750">
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">Hotel Alua Tenerife</h5>
+                              <p class="card-text">El Alua Tenerife cuenta con una situación estupenda, muy cerca del
+                                  pueblo de La Orotava, a unos metros de la playa y al lado de Loro Parque, el parque
+                                  de animales más famoso de todo Tenerife. Además, tiene muchas comodidades, con
+                                  piscinas, sauna, gimnasio, pistas de tenis o bares y restaurantes.</p>
+                              <a href="#"
+                                  class="btn btn-primary card text-center mb-3 btn btn-outline-success"
+                                  style="margin-left: 40%; margin-right: 40%;">Info.</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+            <div class="card text-bg-light mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://z.cdrst.com/foto/hotel-sf/1630/medianaresp/alua-tenerife-exterior-112232f6.jpg"
+                            class="img-fluid rounded-start h-100" width="450" height="750">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Alua Tenerife</h5>
+                            <p class="card-text">El Alua Tenerife cuenta con una situación estupenda, muy cerca del
+                                pueblo de La Orotava, a unos metros de la playa y al lado de Loro Parque, el parque
+                                de animales más famoso de todo Tenerife. Además, tiene muchas comodidades, con
+                                piscinas, sauna, gimnasio, pistas de tenis o bares y restaurantes.</p>
+                            <a href="#"
+                                class="btn btn-primary card text-center mb-3 btn btn-outline-success"
+                                style="margin-left: 40%; margin-right: 40%;">Info.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card text-bg-light mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://z.cdrst.com/foto/hotel-sf/1630/medianaresp/alua-tenerife-exterior-112232f6.jpg"
+                            class="img-fluid rounded-start h-100" width="450" height="750">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Alua Tenerife</h5>
+                            <p class="card-text">El Alua Tenerife cuenta con una situación estupenda, muy cerca del
+                                pueblo de La Orotava, a unos metros de la playa y al lado de Loro Parque, el parque
+                                de animales más famoso de todo Tenerife. Además, tiene muchas comodidades, con
+                                piscinas, sauna, gimnasio, pistas de tenis o bares y restaurantes.</p>
+                            <a href="#"
+                                class="btn btn-primary card text-center mb-3 btn btn-outline-success"
+                                style="margin-left: 40%; margin-right: 40%;">Info.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+          <div class="card text-bg-light mb-3" style="max-width: 100%;">
+              <div class="row g-0">
+                  <div class="col-md-4">
+                      <img src="https://z.cdrst.com/foto/hotel-sf/1630/medianaresp/alua-tenerife-exterior-112232f6.jpg"
+                          class="img-fluid rounded-start h-100" width="450" height="750">
+                  </div>
+                  <div class="col-md-8">
+                      <div class="card-body">
+                          <h5 class="card-title">Hotel Alua Tenerife</h5>
+                          <p class="card-text">El Alua Tenerife cuenta con una situación estupenda, muy cerca del
+                              pueblo de La Orotava, a unos metros de la playa y al lado de Loro Parque, el parque
+                              de animales más famoso de todo Tenerife. Además, tiene muchas comodidades, con
+                              piscinas, sauna, gimnasio, pistas de tenis o bares y restaurantes.</p>
+                          <a href="#"
+                              class="btn btn-primary card text-center mb-3 btn btn-outline-success"
+                              style="margin-left: 40%; margin-right: 40%;">Info.</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-6">
+          <div class="card text-bg-light mb-3" style="max-width: 100%;">
+              <div class="row g-0">
+                  <div class="col-md-4">
+                      <img src="https://z.cdrst.com/foto/hotel-sf/1630/medianaresp/alua-tenerife-exterior-112232f6.jpg"
+                          class="img-fluid rounded-start h-100" width="450" height="750">
+                  </div>
+                  <div class="col-md-8">
+                      <div class="card-body">
+                          <h5 class="card-title">Hotel Alua Tenerife</h5>
+                          <p class="card-text">El Alua Tenerife cuenta con una situación estupenda, muy cerca del
+                              pueblo de La Orotava, a unos metros de la playa y al lado de Loro Parque, el parque
+                              de animales más famoso de todo Tenerife. Además, tiene muchas comodidades, con
+                              piscinas, sauna, gimnasio, pistas de tenis o bares y restaurantes.</p>
+                          <a href="#"
+                              class="btn btn-primary card text-center mb-3 btn btn-outline-success"
+                              style="margin-left: 40%; margin-right: 40%;">Info.</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+        <div class="card text-bg-light mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://z.cdrst.com/foto/hotel-sf/1630/medianaresp/alua-tenerife-exterior-112232f6.jpg"
+                        class="img-fluid rounded-start h-100" width="450" height="750">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Alua Tenerife</h5>
+                        <p class="card-text">El Alua Tenerife cuenta con una situación estupenda, muy cerca del
+                            pueblo de La Orotava, a unos metros de la playa y al lado de Loro Parque, el parque
+                            de animales más famoso de todo Tenerife. Además, tiene muchas comodidades, con
+                            piscinas, sauna, gimnasio, pistas de tenis o bares y restaurantes.</p>
+                        <a href="#"
+                            class="btn btn-primary card text-center mb-3 btn btn-outline-success"
+                            style="margin-left: 40%; margin-right: 40%;">Info.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card text-bg-light mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://z.cdrst.com/foto/hotel-sf/1630/medianaresp/alua-tenerife-exterior-112232f6.jpg"
+                        class="img-fluid rounded-start h-100" width="450" height="750">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Alua Tenerife</h5>
+                        <p class="card-text">El Alua Tenerife cuenta con una situación estupenda, muy cerca del
+                            pueblo de La Orotava, a unos metros de la playa y al lado de Loro Parque, el parque
+                            de animales más famoso de todo Tenerife. Además, tiene muchas comodidades, con
+                            piscinas, sauna, gimnasio, pistas de tenis o bares y restaurantes.</p>
+                        <a href="#"
+                            class="btn btn-primary card text-center mb-3 btn btn-outline-success"
+                            style="margin-left: 40%; margin-right: 40%;">Info.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="btn-2" id="load-more">Cargar Mas</div>
+  </main>
+  
+  
+  
+      
+
+  
   <!--Footer-->
   <div class="b-example-divider"></div>
   <div class="container">
